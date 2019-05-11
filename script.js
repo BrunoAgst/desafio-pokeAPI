@@ -8,7 +8,7 @@ btnElement.addEventListener('click', function() {
 
     let cidade = inputElement.value;
 
-    let api = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=073308d564dcc16b5dcfbade6ba6af07`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=5ae115a4ab8f2c110c6be92d140921f4`;
     let request = new XMLHttpRequest();
     
     request.open('GET', api);
