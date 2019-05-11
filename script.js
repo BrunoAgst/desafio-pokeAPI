@@ -34,7 +34,7 @@ btnElement.addEventListener('click', function() {
                 return temperatura;
             }
         }
-        if(clima === temperatura){
+        if(clima === 'Rain'){
             var api2 = `https://pokeapi.co/api/v2/type/electric`;
         } 
         else if(valorTemperatura < 5){
