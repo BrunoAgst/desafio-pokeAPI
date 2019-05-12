@@ -2,10 +2,9 @@ var btnElement = document.getElementById('button');
 var inputElement = document.getElementById('city');
 var divTemperaturaElement = document.getElementById('temperatura');
 var divClimaElement = document.getElementById('clima');
-var divPokemonElement = document.getElementById('pokemon');
 
 btnElement.addEventListener('click', function() {
-
+    
     let cidade = inputElement.value;
 
     let api = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=5ae115a4ab8f2c110c6be92d140921f4`;
@@ -69,19 +68,28 @@ btnElement.addEventListener('click', function() {
                     let namePokemon = JSON.parse(request2.responseText).pokemon;
                     
                     var listaPokemon = [];
-            
+                    
+                    adicionarPokemon(namePokemon);
+
                     function adicionarPokemon (array){
                         for(var x in array){
-                            let p = array[x].pokemon.name;
+                            let p = array[x].pokemon.url;
                             listaPokemon.push(p);
                         }
+
+                        var pokemonAleatorio =  listaPokemon[Math.floor(Math.random()*listaPokemon.length)];
+
+                        let request3 = new XMLHttpRequest();
+                        request3.open('GET',pokemonAleatorio);
+
+                        request3.onload = function(){
+                            let iconPokemon =  JSON.parse(request3.responseText).sprites.front_default;
+                            divPokemonElement = document.getElementById('pokemon').src = iconPokemon;  
+                        }
+
+                        request3.send();
                     }
-            
-                    adicionarPokemon(namePokemon);
-                    
-                    var pokemonAleatorio =  listaPokemon[Math.floor(Math.random()*listaPokemon.length)];
-                    divPokemonElement.innerHTML = pokemonAleatorio;
-            
+                                        
                 };
 
                 request2.send();
