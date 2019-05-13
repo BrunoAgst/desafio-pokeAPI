@@ -18,7 +18,7 @@ btnElement.addEventListener('click', function() {
         let clima = localizarClima(sky);
         let valorTemperatura = temperaturaCidade.main.temp;
         
-        divTemperaturaElement.innerHTML = valorTemperatura;
+        divTemperaturaElement.innerHTML = Math.round(valorTemperatura) + ' °C';
 
         if(clima == 'Rain'){
             divClimaElement.innerHTML = 'Está Chovendo!';
