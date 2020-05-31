@@ -5,24 +5,20 @@ Introdução
 ---
 ## Desafio
 
-> Construir uma aplicação web que resumidamente teria que retornar um Pokémon aleatório de um determinado **tipo** de acordo com o clima atual cidade. 
+> Construir uma aplicação web que resumidamente teria que retornar um Pokémon de um determinado **tipo** de acordo com o clima atual cidade informada.
+ 
 ## Tecnologias
 * HTML;
 * CSS;
-* JavaScript.
+* Nodejs.
 
 Desenvolvimento
 ----
-> Foi utilizado o HTML para estruturar o site, o CSS para poder estilizar os componentes, e javaScript a lógica.
-> As duas **APIs** foram responsáveis por trazer algumas requições necessárias:
+> Foi utilizado o HTML para estruturar o site, o CSS para poder estilizar os componentes e nodeJS como backend.
+> As duas **APIs** foram responsáveis por:
 > - **OpenWeatherMap:** Está API retorna a temperatura e o clima atual de acordo com o nome da cidade;
 > - **PokeAPI:** Está outra API retorna os Pokémons de acordo com o seu tipo.
 > 
-> Juntando as requições dessas duas API foi aplicado uma lógica em javaScript para retornar um Pokémon aleatório de acordo com o clima e a temperatura atual da cidade.
+>  Com retorno de das APIs realizei a lógica para retornar um pokemon aleatório de um tipo específico.
 
-Diagrama
-----
-Abaixo está representado em diagrama a lógica aplicada na aplicação:
-
-   ![Diagrama](https://lh3.googleusercontent.com/THSo1HTpbk0F6NmX2xKF1IWI4ty5udxtzSl6iOzvE_7-_1UlRsPbSbFeMT3zvcpAkkijo7opTxit)
 #### tags: `Documentation` `Pokémon` `OpenWeatherMap` `PokeAPI` 

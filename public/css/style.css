@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/fundo.png);
+    background-image: url(/img/fundo.png);
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body{
 #pokemon{
     position: absolute;
     font-size: 20px;
-    top: 390px;
+    top: 315px;
     left: 150px;
     text-transform: uppercase;
     font-style: normal;
@@ -71,3 +71,4 @@ body{
     color: rgb(49, 81, 147);
     padding: 20px;
 }
+

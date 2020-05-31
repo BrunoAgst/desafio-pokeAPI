@@ -1,0 +1,14 @@
+<%- include("./partials/header.ejs") %>
+    <body>  
+        <div class="body">
+            <img id="title" src="/img/title.png"></img>
+
+            <form action="/search" method="POST">
+                <div id="inputAndButton">
+                    <input type="text" id="city" name="city" required="required" placeholder="Digite a Cidade"/>
+                    <button id="button">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+<%- include("./partials/footer.ejs") %>

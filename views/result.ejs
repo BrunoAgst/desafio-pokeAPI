@@ -1,0 +1,13 @@
+<%- include("./partials/header.ejs") %>
+    <body>  
+        <div class="body">
+            <img id="title" src="/img/title.png"></img>     
+            <conteiner id="cont">
+                <div id="text">Temperatura: <%= temps %> </div>
+                <div id="text">Clima: <%= mains %> </div>
+                <div id="text">Pokémon: </div>
+                <img id="pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<%= pokemons %>.png"></img>
+            </conteiner>
+        </div>
+    </body>
+<%- include("./partials/footer.ejs") %>
