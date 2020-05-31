@@ -19,11 +19,4 @@ Desenvolvimento
 > - **OpenWeatherMap:** Está API retorna a temperatura e o clima atual de acordo com o nome da cidade;
 > - **PokeAPI:** Está outra API retorna os Pokémons de acordo com o seu tipo.
 >  
->  Com retorno das APIs realizei a lógica para retornar um pokemon aleatório de um tipo específico.
-
-Imagens
-===
-
-![image1](https://ibb.co/pZw7yvV)
-
-![image2](https://ibb.co/drxYSKv)
+> Com retorno das APIs realizei a lógica para retornar um pokemon aleatório de um tipo específico.
